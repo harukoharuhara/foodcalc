@@ -15,7 +15,7 @@
   <tbody>
     <% @eatens.each do |eaten| %>
       <tr>
-        <td><%= eaten.food %></td>
+        <td><%= eaten.food.name %></td>
         <td><%= eaten.portion_factor %></td>
         <td><%= eaten.date %></td>
         <td><%= link_to 'Show', eaten %></td>
