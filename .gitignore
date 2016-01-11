@@ -16,3 +16,8 @@
 /log/*
 !/log/.keep
 /tmp
+
+*.swp
+*.swo
+.idea
+Gemfile.lock

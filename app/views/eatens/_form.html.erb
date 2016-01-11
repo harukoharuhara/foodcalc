@@ -12,8 +12,7 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :food_id %><br>
-    <%= f.text_field :food_id %>
+	<%= collection_select(:eaten, :food_id, @foods_list, :id, :name, promt: true)%>
   </div>
   <div class="field">
     <%= f.label :portion_factor %><br>

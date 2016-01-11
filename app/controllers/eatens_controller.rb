@@ -15,10 +15,12 @@ class EatensController < ApplicationController
   # GET /eatens/new
   def new
     @eaten = Eaten.new
+    @foods_list = Food.all
   end
 
   # GET /eatens/1/edit
   def edit
+    @foods_list = Food.all
   end
 
   # POST /eatens
